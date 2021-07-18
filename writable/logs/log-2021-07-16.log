@@ -1,0 +1,117 @@
+ERROR - 2021-07-16 16:07:08 --> Table 'asset_management_codeigniter.region' doesn't exist
+CRITICAL - 2021-07-16 16:07:08 --> Table 'asset_management_codeigniter.region' doesn't exist
+#0 E:\htdocs\rico_store_management_app_2\system\Database\MySQLi\Connection.php(329): mysqli->query('select * from r...')
+#1 E:\htdocs\rico_store_management_app_2\system\Database\BaseConnection.php(732): CodeIgniter\Database\MySQLi\Connection->execute('select * from r...')
+#2 E:\htdocs\rico_store_management_app_2\system\Database\BaseConnection.php(647): CodeIgniter\Database\BaseConnection->simpleQuery('select * from r...')
+#3 E:\htdocs\rico_store_management_app_2\app\Models\Region.php(96): CodeIgniter\Database\BaseConnection->query('select * from r...')
+#4 E:\htdocs\rico_store_management_app_2\app\Controllers\Region.php(23): App\Models\Region->get_region_by_id(0)
+#5 E:\htdocs\rico_store_management_app_2\system\CodeIgniter.php(931): App\Controllers\Region->load_add_edit_region_views()
+#6 E:\htdocs\rico_store_management_app_2\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Region))
+#7 E:\htdocs\rico_store_management_app_2\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 E:\htdocs\rico_store_management_app_2\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#9 E:\htdocs\rico_store_management_app_2\system\Commands\Server\rewrite.php(45): require_once('E:\\htdocs\\rico_...')
+#10 {main}
+ERROR - 2021-07-16 16:07:11 --> Table 'asset_management_codeigniter.region' doesn't exist
+CRITICAL - 2021-07-16 16:07:11 --> Table 'asset_management_codeigniter.region' doesn't exist
+#0 E:\htdocs\rico_store_management_app_2\system\Database\MySQLi\Connection.php(329): mysqli->query('select * from r...')
+#1 E:\htdocs\rico_store_management_app_2\system\Database\BaseConnection.php(732): CodeIgniter\Database\MySQLi\Connection->execute('select * from r...')
+#2 E:\htdocs\rico_store_management_app_2\system\Database\BaseConnection.php(647): CodeIgniter\Database\BaseConnection->simpleQuery('select * from r...')
+#3 E:\htdocs\rico_store_management_app_2\app\Models\Region.php(96): CodeIgniter\Database\BaseConnection->query('select * from r...')
+#4 E:\htdocs\rico_store_management_app_2\app\Controllers\Region.php(23): App\Models\Region->get_region_by_id(0)
+#5 E:\htdocs\rico_store_management_app_2\system\CodeIgniter.php(931): App\Controllers\Region->load_add_edit_region_views()
+#6 E:\htdocs\rico_store_management_app_2\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Region))
+#7 E:\htdocs\rico_store_management_app_2\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 E:\htdocs\rico_store_management_app_2\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#9 E:\htdocs\rico_store_management_app_2\system\Commands\Server\rewrite.php(45): require_once('E:\\htdocs\\rico_...')
+#10 {main}
+ERROR - 2021-07-16 16:07:20 --> Table 'asset_management_codeigniter.region' doesn't exist
+CRITICAL - 2021-07-16 16:07:20 --> Table 'asset_management_codeigniter.region' doesn't exist
+#0 E:\htdocs\rico_store_management_app_2\system\Database\MySQLi\Connection.php(329): mysqli->query('select * from r...')
+#1 E:\htdocs\rico_store_management_app_2\system\Database\BaseConnection.php(732): CodeIgniter\Database\MySQLi\Connection->execute('select * from r...')
+#2 E:\htdocs\rico_store_management_app_2\system\Database\BaseConnection.php(647): CodeIgniter\Database\BaseConnection->simpleQuery('select * from r...')
+#3 E:\htdocs\rico_store_management_app_2\app\Models\Region.php(96): CodeIgniter\Database\BaseConnection->query('select * from r...')
+#4 E:\htdocs\rico_store_management_app_2\app\Controllers\Region.php(23): App\Models\Region->get_region_by_id(0)
+#5 E:\htdocs\rico_store_management_app_2\system\CodeIgniter.php(931): App\Controllers\Region->load_add_edit_region_views()
+#6 E:\htdocs\rico_store_management_app_2\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Region))
+#7 E:\htdocs\rico_store_management_app_2\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 E:\htdocs\rico_store_management_app_2\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#9 E:\htdocs\rico_store_management_app_2\system\Commands\Server\rewrite.php(45): require_once('E:\\htdocs\\rico_...')
+#10 {main}
+CRITICAL - 2021-07-16 16:36:45 --> Call to undefined method App\Models\Region::get_office_by_id
+#0 E:\htdocs\rico_store_management_app_2\app\Controllers\Region.php(21): CodeIgniter\Model->__call('get_office_by_i...', Array)
+#1 E:\htdocs\rico_store_management_app_2\system\CodeIgniter.php(931): App\Controllers\Region->load_add_edit_registration_office_views()
+#2 E:\htdocs\rico_store_management_app_2\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Region))
+#3 E:\htdocs\rico_store_management_app_2\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 E:\htdocs\rico_store_management_app_2\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#5 E:\htdocs\rico_store_management_app_2\system\Commands\Server\rewrite.php(45): require_once('E:\\htdocs\\rico_...')
+#6 {main}
+CRITICAL - 2021-07-16 16:36:55 --> Call to undefined method App\Models\Region::get_office_by_id
+#0 E:\htdocs\rico_store_management_app_2\app\Controllers\Region.php(21): CodeIgniter\Model->__call('get_office_by_i...', Array)
+#1 E:\htdocs\rico_store_management_app_2\system\CodeIgniter.php(931): App\Controllers\Region->load_add_edit_registration_office_views()
+#2 E:\htdocs\rico_store_management_app_2\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Region))
+#3 E:\htdocs\rico_store_management_app_2\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 E:\htdocs\rico_store_management_app_2\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#5 E:\htdocs\rico_store_management_app_2\system\Commands\Server\rewrite.php(45): require_once('E:\\htdocs\\rico_...')
+#6 {main}
+CRITICAL - 2021-07-16 16:37:02 --> Call to undefined method App\Models\Region::get_office_by_id
+#0 E:\htdocs\rico_store_management_app_2\app\Controllers\Region.php(21): CodeIgniter\Model->__call('get_office_by_i...', Array)
+#1 E:\htdocs\rico_store_management_app_2\system\CodeIgniter.php(931): App\Controllers\Region->load_add_edit_registration_office_views()
+#2 E:\htdocs\rico_store_management_app_2\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Region))
+#3 E:\htdocs\rico_store_management_app_2\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 E:\htdocs\rico_store_management_app_2\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#5 E:\htdocs\rico_store_management_app_2\system\Commands\Server\rewrite.php(45): require_once('E:\\htdocs\\rico_...')
+#6 {main}
+CRITICAL - 2021-07-16 16:38:44 --> Call to undefined method App\Models\Region::get_office_by_id
+#0 E:\htdocs\rico_store_management_app_2\app\Controllers\Region.php(21): CodeIgniter\Model->__call('get_office_by_i...', Array)
+#1 E:\htdocs\rico_store_management_app_2\system\CodeIgniter.php(931): App\Controllers\Region->load_add_edit_registration_office_views()
+#2 E:\htdocs\rico_store_management_app_2\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Region))
+#3 E:\htdocs\rico_store_management_app_2\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 E:\htdocs\rico_store_management_app_2\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#5 E:\htdocs\rico_store_management_app_2\system\Commands\Server\rewrite.php(45): require_once('E:\\htdocs\\rico_...')
+#6 {main}
+ERROR - 2021-07-16 17:17:45 --> Table 'asset_management_codeigniter.sub_county' doesn't exist
+CRITICAL - 2021-07-16 17:17:45 --> Table 'asset_management_codeigniter.sub_county' doesn't exist
+#0 E:\htdocs\rico_store_management_app_2\system\Database\MySQLi\Connection.php(329): mysqli->query('SELECT * from r...')
+#1 E:\htdocs\rico_store_management_app_2\system\Database\BaseConnection.php(732): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * from r...')
+#2 E:\htdocs\rico_store_management_app_2\system\Database\BaseConnection.php(647): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * from r...')
+#3 E:\htdocs\rico_store_management_app_2\app\Models\Region.php(130): CodeIgniter\Database\BaseConnection->query('SELECT * from r...')
+#4 E:\htdocs\rico_store_management_app_2\app\Controllers\Region.php(22): App\Models\Region->get_all_registered_offices()
+#5 E:\htdocs\rico_store_management_app_2\system\CodeIgniter.php(931): App\Controllers\Region->load_add_edit_registration_office_views()
+#6 E:\htdocs\rico_store_management_app_2\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Region))
+#7 E:\htdocs\rico_store_management_app_2\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 E:\htdocs\rico_store_management_app_2\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#9 E:\htdocs\rico_store_management_app_2\system\Commands\Server\rewrite.php(45): require_once('E:\\htdocs\\rico_...')
+#10 {main}
+ERROR - 2021-07-16 17:18:26 --> Table 'asset_management_codeigniter.sub_county' doesn't exist
+CRITICAL - 2021-07-16 17:18:26 --> Table 'asset_management_codeigniter.sub_county' doesn't exist
+#0 E:\htdocs\rico_store_management_app_2\system\Database\MySQLi\Connection.php(329): mysqli->query('SELECT * from r...')
+#1 E:\htdocs\rico_store_management_app_2\system\Database\BaseConnection.php(732): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * from r...')
+#2 E:\htdocs\rico_store_management_app_2\system\Database\BaseConnection.php(647): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * from r...')
+#3 E:\htdocs\rico_store_management_app_2\app\Models\Region.php(130): CodeIgniter\Database\BaseConnection->query('SELECT * from r...')
+#4 E:\htdocs\rico_store_management_app_2\app\Controllers\Region.php(22): App\Models\Region->get_all_registered_offices()
+#5 E:\htdocs\rico_store_management_app_2\system\CodeIgniter.php(931): App\Controllers\Region->load_add_edit_registration_office_views()
+#6 E:\htdocs\rico_store_management_app_2\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Region))
+#7 E:\htdocs\rico_store_management_app_2\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 E:\htdocs\rico_store_management_app_2\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#9 E:\htdocs\rico_store_management_app_2\system\Commands\Server\rewrite.php(45): require_once('E:\\htdocs\\rico_...')
+#10 {main}
+CRITICAL - 2021-07-16 17:26:00 --> Undefined variable: device_data
+#0 E:\htdocs\rico_store_management_app_2\app\Views\Regions\add_registration_office.php(6): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'E:\\htdocs\\rico_...', 6, Array)
+#1 E:\htdocs\rico_store_management_app_2\system\View\View.php(230): include('E:\\htdocs\\rico_...')
+#2 E:\htdocs\rico_store_management_app_2\system\View\View.php(232): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 E:\htdocs\rico_store_management_app_2\system\Common.php(1250): CodeIgniter\View\View->render('Regions\\add_reg...', Array, true)
+#4 E:\htdocs\rico_store_management_app_2\app\Controllers\Region.php(25): view('Regions\\add_reg...', Array)
+#5 E:\htdocs\rico_store_management_app_2\system\CodeIgniter.php(931): App\Controllers\Region->load_add_edit_registration_office_views()
+#6 E:\htdocs\rico_store_management_app_2\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Region))
+#7 E:\htdocs\rico_store_management_app_2\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 E:\htdocs\rico_store_management_app_2\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#9 E:\htdocs\rico_store_management_app_2\system\Commands\Server\rewrite.php(45): require_once('E:\\htdocs\\rico_...')
+#10 {main}
+CRITICAL - 2021-07-16 17:27:22 --> Undefined variable: delete_device_details
+#0 E:\htdocs\rico_store_management_app_2\app\Controllers\Region.php(75): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'E:\\htdocs\\rico_...', 75, Array)
+#1 E:\htdocs\rico_store_management_app_2\system\CodeIgniter.php(931): App\Controllers\Region->delete_registration_office()
+#2 E:\htdocs\rico_store_management_app_2\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Region))
+#3 E:\htdocs\rico_store_management_app_2\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 E:\htdocs\rico_store_management_app_2\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#5 E:\htdocs\rico_store_management_app_2\system\Commands\Server\rewrite.php(45): require_once('E:\\htdocs\\rico_...')
+#6 {main}

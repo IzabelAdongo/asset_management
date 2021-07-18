@@ -1,0 +1,1020 @@
+ERROR - 2021-06-23 12:33:36 --> ErrorException: pg_query(): Query failed: ERROR:  column &quot;user_account_id&quot; can only be updated to DEFAULT
+DETAIL:  Column &quot;user_account_id&quot; is an identity column defined as GENERATED ALWAYS. in C:\xampp\htdocs\rico_store_management_app\system\Database\Postgre\Connection.php:170
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp\\htdocs...', 170, Array)
+#1 C:\xampp\htdocs\rico_store_management_app\system\Database\Postgre\Connection.php(170): pg_query(Resource id #144, 'UPDATE "user_ac...')
+#2 C:\xampp\htdocs\rico_store_management_app\system\Database\BaseConnection.php(732): CodeIgniter\Database\Postgre\Connection->execute('UPDATE "user_ac...')
+#3 C:\xampp\htdocs\rico_store_management_app\system\Database\BaseConnection.php(647): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE "user_ac...')
+#4 C:\xampp\htdocs\rico_store_management_app\system\Database\BaseBuilder.php(2482): CodeIgniter\Database\BaseConnection->query('UPDATE "user_ac...', Array, false)
+#5 C:\xampp\htdocs\rico_store_management_app\app\Models\Users.php(73): CodeIgniter\Database\BaseBuilder->update(Array)
+#6 C:\xampp\htdocs\rico_store_management_app\app\Controllers\Users.php(55): App\Models\Users->insert_update_user_data('0726287383', 'rash@gamil.com', NULL, '34002241', '1', 'Isabel', 'Adongo', '2')
+#7 C:\xampp\htdocs\rico_store_management_app\system\CodeIgniter.php(931): App\Controllers\Users->add_edit_users_data()
+#8 C:\xampp\htdocs\rico_store_management_app\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#9 C:\xampp\htdocs\rico_store_management_app\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\rico_store_management_app\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\rico_store_management_app\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2021-06-23 12:33:36 --> pg_query(): Query failed: ERROR:  column &quot;user_account_id&quot; can only be updated to DEFAULT
+DETAIL:  Column &quot;user_account_id&quot; is an identity column defined as GENERATED ALWAYS.
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp\\htdocs...', 170, Array)
+#1 C:\xampp\htdocs\rico_store_management_app\system\Database\Postgre\Connection.php(170): pg_query(Resource id #144, 'UPDATE "user_ac...')
+#2 C:\xampp\htdocs\rico_store_management_app\system\Database\BaseConnection.php(732): CodeIgniter\Database\Postgre\Connection->execute('UPDATE "user_ac...')
+#3 C:\xampp\htdocs\rico_store_management_app\system\Database\BaseConnection.php(647): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE "user_ac...')
+#4 C:\xampp\htdocs\rico_store_management_app\system\Database\BaseBuilder.php(2482): CodeIgniter\Database\BaseConnection->query('UPDATE "user_ac...', Array, false)
+#5 C:\xampp\htdocs\rico_store_management_app\app\Models\Users.php(73): CodeIgniter\Database\BaseBuilder->update(Array)
+#6 C:\xampp\htdocs\rico_store_management_app\app\Controllers\Users.php(55): App\Models\Users->insert_update_user_data('0726287383', 'rash@gamil.com', NULL, '34002241', '1', 'Isabel', 'Adongo', '2')
+#7 C:\xampp\htdocs\rico_store_management_app\system\CodeIgniter.php(931): App\Controllers\Users->add_edit_users_data()
+#8 C:\xampp\htdocs\rico_store_management_app\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#9 C:\xampp\htdocs\rico_store_management_app\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\rico_store_management_app\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\rico_store_management_app\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2021-06-23 12:33:36 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Type is not supported". in C:\xampp\htdocs\rico_store_management_app\system\Format\JSONFormatter.php:42
+Stack trace:
+#0 C:\xampp\htdocs\rico_store_management_app\system\Format\JSONFormatter.php(42): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 C:\xampp\htdocs\rico_store_management_app\system\API\ResponseTrait.php(423): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 C:\xampp\htdocs\rico_store_management_app\system\API\ResponseTrait.php(114): CodeIgniter\Debug\Exceptions->format(Array)
+#3 C:\xampp\htdocs\rico_store_management_app\system\Debug\Exceptions.php(141): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+ERROR - 2021-06-23 12:33:37 --> ErrorException: pg_query(): Query failed: ERROR:  column &quot;user_account_id&quot; can only be updated to DEFAULT
+DETAIL:  Column &quot;user_account_id&quot; is an identity column defined as GENERATED ALWAYS. in C:\xampp\htdocs\rico_store_management_app\system\Database\Postgre\Connection.php:170
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp\\htdocs...', 170, Array)
+#1 C:\xampp\htdocs\rico_store_management_app\system\Database\Postgre\Connection.php(170): pg_query(Resource id #144, 'UPDATE "user_ac...')
+#2 C:\xampp\htdocs\rico_store_management_app\system\Database\BaseConnection.php(732): CodeIgniter\Database\Postgre\Connection->execute('UPDATE "user_ac...')
+#3 C:\xampp\htdocs\rico_store_management_app\system\Database\BaseConnection.php(647): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE "user_ac...')
+#4 C:\xampp\htdocs\rico_store_management_app\system\Database\BaseBuilder.php(2482): CodeIgniter\Database\BaseConnection->query('UPDATE "user_ac...', Array, false)
+#5 C:\xampp\htdocs\rico_store_management_app\app\Models\Users.php(73): CodeIgniter\Database\BaseBuilder->update(Array)
+#6 C:\xampp\htdocs\rico_store_management_app\app\Controllers\Users.php(55): App\Models\Users->insert_update_user_data('0726287383', 'rash@gamil.com', NULL, '34002241', '1', 'Isabel', 'Adongo', '2')
+#7 C:\xampp\htdocs\rico_store_management_app\system\CodeIgniter.php(931): App\Controllers\Users->add_edit_users_data()
+#8 C:\xampp\htdocs\rico_store_management_app\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#9 C:\xampp\htdocs\rico_store_management_app\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\rico_store_management_app\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\rico_store_management_app\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2021-06-23 12:33:37 --> pg_query(): Query failed: ERROR:  column &quot;user_account_id&quot; can only be updated to DEFAULT
+DETAIL:  Column &quot;user_account_id&quot; is an identity column defined as GENERATED ALWAYS.
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp\\htdocs...', 170, Array)
+#1 C:\xampp\htdocs\rico_store_management_app\system\Database\Postgre\Connection.php(170): pg_query(Resource id #144, 'UPDATE "user_ac...')
+#2 C:\xampp\htdocs\rico_store_management_app\system\Database\BaseConnection.php(732): CodeIgniter\Database\Postgre\Connection->execute('UPDATE "user_ac...')
+#3 C:\xampp\htdocs\rico_store_management_app\system\Database\BaseConnection.php(647): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE "user_ac...')
+#4 C:\xampp\htdocs\rico_store_management_app\system\Database\BaseBuilder.php(2482): CodeIgniter\Database\BaseConnection->query('UPDATE "user_ac...', Array, false)
+#5 C:\xampp\htdocs\rico_store_management_app\app\Models\Users.php(73): CodeIgniter\Database\BaseBuilder->update(Array)
+#6 C:\xampp\htdocs\rico_store_management_app\app\Controllers\Users.php(55): App\Models\Users->insert_update_user_data('0726287383', 'rash@gamil.com', NULL, '34002241', '1', 'Isabel', 'Adongo', '2')
+#7 C:\xampp\htdocs\rico_store_management_app\system\CodeIgniter.php(931): App\Controllers\Users->add_edit_users_data()
+#8 C:\xampp\htdocs\rico_store_management_app\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#9 C:\xampp\htdocs\rico_store_management_app\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\rico_store_management_app\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\rico_store_management_app\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2021-06-23 12:33:38 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Type is not supported". in C:\xampp\htdocs\rico_store_management_app\system\Format\JSONFormatter.php:42
+Stack trace:
+#0 C:\xampp\htdocs\rico_store_management_app\system\Format\JSONFormatter.php(42): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 C:\xampp\htdocs\rico_store_management_app\system\API\ResponseTrait.php(423): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 C:\xampp\htdocs\rico_store_management_app\system\API\ResponseTrait.php(114): CodeIgniter\Debug\Exceptions->format(Array)
+#3 C:\xampp\htdocs\rico_store_management_app\system\Debug\Exceptions.php(141): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+ERROR - 2021-06-23 12:33:38 --> ErrorException: pg_query(): Query failed: ERROR:  column &quot;user_account_id&quot; can only be updated to DEFAULT
+DETAIL:  Column &quot;user_account_id&quot; is an identity column defined as GENERATED ALWAYS. in C:\xampp\htdocs\rico_store_management_app\system\Database\Postgre\Connection.php:170
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp\\htdocs...', 170, Array)
+#1 C:\xampp\htdocs\rico_store_management_app\system\Database\Postgre\Connection.php(170): pg_query(Resource id #144, 'UPDATE "user_ac...')
+#2 C:\xampp\htdocs\rico_store_management_app\system\Database\BaseConnection.php(732): CodeIgniter\Database\Postgre\Connection->execute('UPDATE "user_ac...')
+#3 C:\xampp\htdocs\rico_store_management_app\system\Database\BaseConnection.php(647): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE "user_ac...')
+#4 C:\xampp\htdocs\rico_store_management_app\system\Database\BaseBuilder.php(2482): CodeIgniter\Database\BaseConnection->query('UPDATE "user_ac...', Array, false)
+#5 C:\xampp\htdocs\rico_store_management_app\app\Models\Users.php(73): CodeIgniter\Database\BaseBuilder->update(Array)
+#6 C:\xampp\htdocs\rico_store_management_app\app\Controllers\Users.php(55): App\Models\Users->insert_update_user_data('0726287383', 'rash@gamil.com', NULL, '34002241', '1', 'Isabel', 'Adongo', '2')
+#7 C:\xampp\htdocs\rico_store_management_app\system\CodeIgniter.php(931): App\Controllers\Users->add_edit_users_data()
+#8 C:\xampp\htdocs\rico_store_management_app\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#9 C:\xampp\htdocs\rico_store_management_app\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\rico_store_management_app\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\rico_store_management_app\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2021-06-23 12:33:38 --> pg_query(): Query failed: ERROR:  column &quot;user_account_id&quot; can only be updated to DEFAULT
+DETAIL:  Column &quot;user_account_id&quot; is an identity column defined as GENERATED ALWAYS.
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp\\htdocs...', 170, Array)
+#1 C:\xampp\htdocs\rico_store_management_app\system\Database\Postgre\Connection.php(170): pg_query(Resource id #144, 'UPDATE "user_ac...')
+#2 C:\xampp\htdocs\rico_store_management_app\system\Database\BaseConnection.php(732): CodeIgniter\Database\Postgre\Connection->execute('UPDATE "user_ac...')
+#3 C:\xampp\htdocs\rico_store_management_app\system\Database\BaseConnection.php(647): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE "user_ac...')
+#4 C:\xampp\htdocs\rico_store_management_app\system\Database\BaseBuilder.php(2482): CodeIgniter\Database\BaseConnection->query('UPDATE "user_ac...', Array, false)
+#5 C:\xampp\htdocs\rico_store_management_app\app\Models\Users.php(73): CodeIgniter\Database\BaseBuilder->update(Array)
+#6 C:\xampp\htdocs\rico_store_management_app\app\Controllers\Users.php(55): App\Models\Users->insert_update_user_data('0726287383', 'rash@gamil.com', NULL, '34002241', '1', 'Isabel', 'Adongo', '2')
+#7 C:\xampp\htdocs\rico_store_management_app\system\CodeIgniter.php(931): App\Controllers\Users->add_edit_users_data()
+#8 C:\xampp\htdocs\rico_store_management_app\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#9 C:\xampp\htdocs\rico_store_management_app\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\rico_store_management_app\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\rico_store_management_app\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2021-06-23 12:33:38 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Type is not supported". in C:\xampp\htdocs\rico_store_management_app\system\Format\JSONFormatter.php:42
+Stack trace:
+#0 C:\xampp\htdocs\rico_store_management_app\system\Format\JSONFormatter.php(42): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 C:\xampp\htdocs\rico_store_management_app\system\API\ResponseTrait.php(423): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 C:\xampp\htdocs\rico_store_management_app\system\API\ResponseTrait.php(114): CodeIgniter\Debug\Exceptions->format(Array)
+#3 C:\xampp\htdocs\rico_store_management_app\system\Debug\Exceptions.php(141): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+ERROR - 2021-06-23 12:34:50 --> ErrorException: pg_query(): Query failed: ERROR:  column &quot;user_account_id&quot; can only be updated to DEFAULT
+DETAIL:  Column &quot;user_account_id&quot; is an identity column defined as GENERATED ALWAYS. in C:\xampp\htdocs\rico_store_management_app\system\Database\Postgre\Connection.php:170
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp\\htdocs...', 170, Array)
+#1 C:\xampp\htdocs\rico_store_management_app\system\Database\Postgre\Connection.php(170): pg_query(Resource id #144, 'UPDATE "user_ac...')
+#2 C:\xampp\htdocs\rico_store_management_app\system\Database\BaseConnection.php(732): CodeIgniter\Database\Postgre\Connection->execute('UPDATE "user_ac...')
+#3 C:\xampp\htdocs\rico_store_management_app\system\Database\BaseConnection.php(647): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE "user_ac...')
+#4 C:\xampp\htdocs\rico_store_management_app\system\Database\BaseBuilder.php(2482): CodeIgniter\Database\BaseConnection->query('UPDATE "user_ac...', Array, false)
+#5 C:\xampp\htdocs\rico_store_management_app\app\Models\Users.php(73): CodeIgniter\Database\BaseBuilder->update(Array)
+#6 C:\xampp\htdocs\rico_store_management_app\app\Controllers\Users.php(55): App\Models\Users->insert_update_user_data('0726287383', 'rash@gamil.com', NULL, '34002241', '1', 'Isabel', 'Adongo', '2')
+#7 C:\xampp\htdocs\rico_store_management_app\system\CodeIgniter.php(931): App\Controllers\Users->add_edit_users_data()
+#8 C:\xampp\htdocs\rico_store_management_app\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#9 C:\xampp\htdocs\rico_store_management_app\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\rico_store_management_app\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\rico_store_management_app\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2021-06-23 12:34:50 --> pg_query(): Query failed: ERROR:  column &quot;user_account_id&quot; can only be updated to DEFAULT
+DETAIL:  Column &quot;user_account_id&quot; is an identity column defined as GENERATED ALWAYS.
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp\\htdocs...', 170, Array)
+#1 C:\xampp\htdocs\rico_store_management_app\system\Database\Postgre\Connection.php(170): pg_query(Resource id #144, 'UPDATE "user_ac...')
+#2 C:\xampp\htdocs\rico_store_management_app\system\Database\BaseConnection.php(732): CodeIgniter\Database\Postgre\Connection->execute('UPDATE "user_ac...')
+#3 C:\xampp\htdocs\rico_store_management_app\system\Database\BaseConnection.php(647): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE "user_ac...')
+#4 C:\xampp\htdocs\rico_store_management_app\system\Database\BaseBuilder.php(2482): CodeIgniter\Database\BaseConnection->query('UPDATE "user_ac...', Array, false)
+#5 C:\xampp\htdocs\rico_store_management_app\app\Models\Users.php(73): CodeIgniter\Database\BaseBuilder->update(Array)
+#6 C:\xampp\htdocs\rico_store_management_app\app\Controllers\Users.php(55): App\Models\Users->insert_update_user_data('0726287383', 'rash@gamil.com', NULL, '34002241', '1', 'Isabel', 'Adongo', '2')
+#7 C:\xampp\htdocs\rico_store_management_app\system\CodeIgniter.php(931): App\Controllers\Users->add_edit_users_data()
+#8 C:\xampp\htdocs\rico_store_management_app\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#9 C:\xampp\htdocs\rico_store_management_app\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\rico_store_management_app\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\rico_store_management_app\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2021-06-23 12:34:50 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Type is not supported". in C:\xampp\htdocs\rico_store_management_app\system\Format\JSONFormatter.php:42
+Stack trace:
+#0 C:\xampp\htdocs\rico_store_management_app\system\Format\JSONFormatter.php(42): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 C:\xampp\htdocs\rico_store_management_app\system\API\ResponseTrait.php(423): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 C:\xampp\htdocs\rico_store_management_app\system\API\ResponseTrait.php(114): CodeIgniter\Debug\Exceptions->format(Array)
+#3 C:\xampp\htdocs\rico_store_management_app\system\Debug\Exceptions.php(141): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+ERROR - 2021-06-23 12:36:33 --> ErrorException: pg_query(): Query failed: ERROR:  column &quot;user_account_id&quot; can only be updated to DEFAULT
+DETAIL:  Column &quot;user_account_id&quot; is an identity column defined as GENERATED ALWAYS. in C:\xampp\htdocs\rico_store_management_app\system\Database\Postgre\Connection.php:170
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp\\htdocs...', 170, Array)
+#1 C:\xampp\htdocs\rico_store_management_app\system\Database\Postgre\Connection.php(170): pg_query(Resource id #144, 'UPDATE "user_ac...')
+#2 C:\xampp\htdocs\rico_store_management_app\system\Database\BaseConnection.php(732): CodeIgniter\Database\Postgre\Connection->execute('UPDATE "user_ac...')
+#3 C:\xampp\htdocs\rico_store_management_app\system\Database\BaseConnection.php(647): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE "user_ac...')
+#4 C:\xampp\htdocs\rico_store_management_app\system\Database\BaseBuilder.php(2482): CodeIgniter\Database\BaseConnection->query('UPDATE "user_ac...', Array, false)
+#5 C:\xampp\htdocs\rico_store_management_app\app\Models\Users.php(73): CodeIgniter\Database\BaseBuilder->update(Array)
+#6 C:\xampp\htdocs\rico_store_management_app\app\Controllers\Users.php(55): App\Models\Users->insert_update_user_data('0726287383', 'rash@gamil.com', NULL, '34002241', '1', 'Isabel', 'Adongo', '2')
+#7 C:\xampp\htdocs\rico_store_management_app\system\CodeIgniter.php(931): App\Controllers\Users->add_edit_users_data()
+#8 C:\xampp\htdocs\rico_store_management_app\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#9 C:\xampp\htdocs\rico_store_management_app\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\rico_store_management_app\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\rico_store_management_app\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2021-06-23 12:36:33 --> pg_query(): Query failed: ERROR:  column &quot;user_account_id&quot; can only be updated to DEFAULT
+DETAIL:  Column &quot;user_account_id&quot; is an identity column defined as GENERATED ALWAYS.
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp\\htdocs...', 170, Array)
+#1 C:\xampp\htdocs\rico_store_management_app\system\Database\Postgre\Connection.php(170): pg_query(Resource id #144, 'UPDATE "user_ac...')
+#2 C:\xampp\htdocs\rico_store_management_app\system\Database\BaseConnection.php(732): CodeIgniter\Database\Postgre\Connection->execute('UPDATE "user_ac...')
+#3 C:\xampp\htdocs\rico_store_management_app\system\Database\BaseConnection.php(647): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE "user_ac...')
+#4 C:\xampp\htdocs\rico_store_management_app\system\Database\BaseBuilder.php(2482): CodeIgniter\Database\BaseConnection->query('UPDATE "user_ac...', Array, false)
+#5 C:\xampp\htdocs\rico_store_management_app\app\Models\Users.php(73): CodeIgniter\Database\BaseBuilder->update(Array)
+#6 C:\xampp\htdocs\rico_store_management_app\app\Controllers\Users.php(55): App\Models\Users->insert_update_user_data('0726287383', 'rash@gamil.com', NULL, '34002241', '1', 'Isabel', 'Adongo', '2')
+#7 C:\xampp\htdocs\rico_store_management_app\system\CodeIgniter.php(931): App\Controllers\Users->add_edit_users_data()
+#8 C:\xampp\htdocs\rico_store_management_app\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#9 C:\xampp\htdocs\rico_store_management_app\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\rico_store_management_app\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\rico_store_management_app\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2021-06-23 12:36:33 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Type is not supported". in C:\xampp\htdocs\rico_store_management_app\system\Format\JSONFormatter.php:42
+Stack trace:
+#0 C:\xampp\htdocs\rico_store_management_app\system\Format\JSONFormatter.php(42): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 C:\xampp\htdocs\rico_store_management_app\system\API\ResponseTrait.php(423): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 C:\xampp\htdocs\rico_store_management_app\system\API\ResponseTrait.php(114): CodeIgniter\Debug\Exceptions->format(Array)
+#3 C:\xampp\htdocs\rico_store_management_app\system\Debug\Exceptions.php(141): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+ERROR - 2021-06-23 12:37:24 --> ErrorException: pg_query(): Query failed: ERROR:  null value in column &quot;user_account_email&quot; violates not-null constraint
+DETAIL:  Failing row contains (null, 4, null, null, null, null, , null, null). in C:\xampp\htdocs\rico_store_management_app\system\Database\Postgre\Connection.php:170
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp\\htdocs...', 170, Array)
+#1 C:\xampp\htdocs\rico_store_management_app\system\Database\Postgre\Connection.php(170): pg_query(Resource id #142, 'insert into use...')
+#2 C:\xampp\htdocs\rico_store_management_app\system\Database\BaseConnection.php(732): CodeIgniter\Database\Postgre\Connection->execute('insert into use...')
+#3 C:\xampp\htdocs\rico_store_management_app\system\Database\BaseConnection.php(647): CodeIgniter\Database\BaseConnection->simpleQuery('insert into use...')
+#4 C:\xampp\htdocs\rico_store_management_app\app\Models\Users.php(79): CodeIgniter\Database\BaseConnection->query('insert into use...')
+#5 C:\xampp\htdocs\rico_store_management_app\app\Controllers\Users.php(55): App\Models\Users->insert_update_user_data('', 'zz\\z\\z', NULL, '', 'Choose...', '', 'z\\x\\x\\', '')
+#6 C:\xampp\htdocs\rico_store_management_app\system\CodeIgniter.php(931): App\Controllers\Users->add_edit_users_data()
+#7 C:\xampp\htdocs\rico_store_management_app\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#8 C:\xampp\htdocs\rico_store_management_app\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\rico_store_management_app\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\rico_store_management_app\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2021-06-23 12:37:24 --> pg_query(): Query failed: ERROR:  null value in column &quot;user_account_email&quot; violates not-null constraint
+DETAIL:  Failing row contains (null, 4, null, null, null, null, , null, null).
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp\\htdocs...', 170, Array)
+#1 C:\xampp\htdocs\rico_store_management_app\system\Database\Postgre\Connection.php(170): pg_query(Resource id #142, 'insert into use...')
+#2 C:\xampp\htdocs\rico_store_management_app\system\Database\BaseConnection.php(732): CodeIgniter\Database\Postgre\Connection->execute('insert into use...')
+#3 C:\xampp\htdocs\rico_store_management_app\system\Database\BaseConnection.php(647): CodeIgniter\Database\BaseConnection->simpleQuery('insert into use...')
+#4 C:\xampp\htdocs\rico_store_management_app\app\Models\Users.php(79): CodeIgniter\Database\BaseConnection->query('insert into use...')
+#5 C:\xampp\htdocs\rico_store_management_app\app\Controllers\Users.php(55): App\Models\Users->insert_update_user_data('', 'zz\\z\\z', NULL, '', 'Choose...', '', 'z\\x\\x\\', '')
+#6 C:\xampp\htdocs\rico_store_management_app\system\CodeIgniter.php(931): App\Controllers\Users->add_edit_users_data()
+#7 C:\xampp\htdocs\rico_store_management_app\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#8 C:\xampp\htdocs\rico_store_management_app\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\rico_store_management_app\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\rico_store_management_app\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2021-06-23 12:37:24 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Type is not supported". in C:\xampp\htdocs\rico_store_management_app\system\Format\JSONFormatter.php:42
+Stack trace:
+#0 C:\xampp\htdocs\rico_store_management_app\system\Format\JSONFormatter.php(42): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 C:\xampp\htdocs\rico_store_management_app\system\API\ResponseTrait.php(423): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 C:\xampp\htdocs\rico_store_management_app\system\API\ResponseTrait.php(114): CodeIgniter\Debug\Exceptions->format(Array)
+#3 C:\xampp\htdocs\rico_store_management_app\system\Debug\Exceptions.php(141): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+ERROR - 2021-06-23 12:42:44 --> ErrorException: pg_query(): Query failed: ERROR:  column &quot;user_account_id&quot; can only be updated to DEFAULT
+DETAIL:  Column &quot;user_account_id&quot; is an identity column defined as GENERATED ALWAYS. in C:\xampp\htdocs\rico_store_management_app\system\Database\Postgre\Connection.php:170
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp\\htdocs...', 170, Array)
+#1 C:\xampp\htdocs\rico_store_management_app\system\Database\Postgre\Connection.php(170): pg_query(Resource id #144, 'UPDATE "user_ac...')
+#2 C:\xampp\htdocs\rico_store_management_app\system\Database\BaseConnection.php(732): CodeIgniter\Database\Postgre\Connection->execute('UPDATE "user_ac...')
+#3 C:\xampp\htdocs\rico_store_management_app\system\Database\BaseConnection.php(647): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE "user_ac...')
+#4 C:\xampp\htdocs\rico_store_management_app\system\Database\BaseBuilder.php(2482): CodeIgniter\Database\BaseConnection->query('UPDATE "user_ac...', Array, false)
+#5 C:\xampp\htdocs\rico_store_management_app\app\Models\Users.php(73): CodeIgniter\Database\BaseBuilder->update(Array)
+#6 C:\xampp\htdocs\rico_store_management_app\app\Controllers\Users.php(55): App\Models\Users->insert_update_user_data('32323', 'ccxcx', NULL, '233232', '1', 'xcxccx', 'cxcx', '2')
+#7 C:\xampp\htdocs\rico_store_management_app\system\CodeIgniter.php(931): App\Controllers\Users->add_edit_users_data()
+#8 C:\xampp\htdocs\rico_store_management_app\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#9 C:\xampp\htdocs\rico_store_management_app\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\rico_store_management_app\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\rico_store_management_app\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2021-06-23 12:42:44 --> pg_query(): Query failed: ERROR:  column &quot;user_account_id&quot; can only be updated to DEFAULT
+DETAIL:  Column &quot;user_account_id&quot; is an identity column defined as GENERATED ALWAYS.
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp\\htdocs...', 170, Array)
+#1 C:\xampp\htdocs\rico_store_management_app\system\Database\Postgre\Connection.php(170): pg_query(Resource id #144, 'UPDATE "user_ac...')
+#2 C:\xampp\htdocs\rico_store_management_app\system\Database\BaseConnection.php(732): CodeIgniter\Database\Postgre\Connection->execute('UPDATE "user_ac...')
+#3 C:\xampp\htdocs\rico_store_management_app\system\Database\BaseConnection.php(647): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE "user_ac...')
+#4 C:\xampp\htdocs\rico_store_management_app\system\Database\BaseBuilder.php(2482): CodeIgniter\Database\BaseConnection->query('UPDATE "user_ac...', Array, false)
+#5 C:\xampp\htdocs\rico_store_management_app\app\Models\Users.php(73): CodeIgniter\Database\BaseBuilder->update(Array)
+#6 C:\xampp\htdocs\rico_store_management_app\app\Controllers\Users.php(55): App\Models\Users->insert_update_user_data('32323', 'ccxcx', NULL, '233232', '1', 'xcxccx', 'cxcx', '2')
+#7 C:\xampp\htdocs\rico_store_management_app\system\CodeIgniter.php(931): App\Controllers\Users->add_edit_users_data()
+#8 C:\xampp\htdocs\rico_store_management_app\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#9 C:\xampp\htdocs\rico_store_management_app\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\rico_store_management_app\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\rico_store_management_app\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2021-06-23 12:42:44 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Type is not supported". in C:\xampp\htdocs\rico_store_management_app\system\Format\JSONFormatter.php:42
+Stack trace:
+#0 C:\xampp\htdocs\rico_store_management_app\system\Format\JSONFormatter.php(42): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 C:\xampp\htdocs\rico_store_management_app\system\API\ResponseTrait.php(423): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 C:\xampp\htdocs\rico_store_management_app\system\API\ResponseTrait.php(114): CodeIgniter\Debug\Exceptions->format(Array)
+#3 C:\xampp\htdocs\rico_store_management_app\system\Debug\Exceptions.php(141): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+ERROR - 2021-06-23 12:42:49 --> ErrorException: pg_query(): Query failed: ERROR:  invalid input syntax for type integer: &quot;&quot;
+LINE 3:    ('', '', '', '', '', '', '12345')
+                ^ in C:\xampp\htdocs\rico_store_management_app\system\Database\Postgre\Connection.php:170
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp\\htdocs...', 170, Array)
+#1 C:\xampp\htdocs\rico_store_management_app\system\Database\Postgre\Connection.php(170): pg_query(Resource id #142, 'insert into use...')
+#2 C:\xampp\htdocs\rico_store_management_app\system\Database\BaseConnection.php(732): CodeIgniter\Database\Postgre\Connection->execute('insert into use...')
+#3 C:\xampp\htdocs\rico_store_management_app\system\Database\BaseConnection.php(647): CodeIgniter\Database\BaseConnection->simpleQuery('insert into use...')
+#4 C:\xampp\htdocs\rico_store_management_app\app\Models\Users.php(79): CodeIgniter\Database\BaseConnection->query('insert into use...')
+#5 C:\xampp\htdocs\rico_store_management_app\app\Controllers\Users.php(55): App\Models\Users->insert_update_user_data(NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL)
+#6 C:\xampp\htdocs\rico_store_management_app\system\CodeIgniter.php(931): App\Controllers\Users->add_edit_users_data()
+#7 C:\xampp\htdocs\rico_store_management_app\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#8 C:\xampp\htdocs\rico_store_management_app\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\rico_store_management_app\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\rico_store_management_app\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2021-06-23 12:42:49 --> pg_query(): Query failed: ERROR:  invalid input syntax for type integer: &quot;&quot;
+LINE 3:    ('', '', '', '', '', '', '12345')
+                ^
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp\\htdocs...', 170, Array)
+#1 C:\xampp\htdocs\rico_store_management_app\system\Database\Postgre\Connection.php(170): pg_query(Resource id #142, 'insert into use...')
+#2 C:\xampp\htdocs\rico_store_management_app\system\Database\BaseConnection.php(732): CodeIgniter\Database\Postgre\Connection->execute('insert into use...')
+#3 C:\xampp\htdocs\rico_store_management_app\system\Database\BaseConnection.php(647): CodeIgniter\Database\BaseConnection->simpleQuery('insert into use...')
+#4 C:\xampp\htdocs\rico_store_management_app\app\Models\Users.php(79): CodeIgniter\Database\BaseConnection->query('insert into use...')
+#5 C:\xampp\htdocs\rico_store_management_app\app\Controllers\Users.php(55): App\Models\Users->insert_update_user_data(NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL)
+#6 C:\xampp\htdocs\rico_store_management_app\system\CodeIgniter.php(931): App\Controllers\Users->add_edit_users_data()
+#7 C:\xampp\htdocs\rico_store_management_app\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#8 C:\xampp\htdocs\rico_store_management_app\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\rico_store_management_app\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\rico_store_management_app\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+ERROR - 2021-06-23 12:48:54 --> ErrorException: pg_query(): Query failed: ERROR:  invalid input syntax for type integer: &quot;&quot;
+LINE 3:    ('', '', '', '', '', '', '12345')
+                ^ in C:\xampp\htdocs\rico_store_management_app\system\Database\Postgre\Connection.php:170
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp\\htdocs...', 170, Array)
+#1 C:\xampp\htdocs\rico_store_management_app\system\Database\Postgre\Connection.php(170): pg_query(Resource id #143, 'insert into use...')
+#2 C:\xampp\htdocs\rico_store_management_app\system\Database\BaseConnection.php(732): CodeIgniter\Database\Postgre\Connection->execute('insert into use...')
+#3 C:\xampp\htdocs\rico_store_management_app\system\Database\BaseConnection.php(647): CodeIgniter\Database\BaseConnection->simpleQuery('insert into use...')
+#4 C:\xampp\htdocs\rico_store_management_app\app\Models\Users.php(79): CodeIgniter\Database\BaseConnection->query('insert into use...')
+#5 C:\xampp\htdocs\rico_store_management_app\app\Controllers\Users.php(55): App\Models\Users->insert_update_user_data(NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL)
+#6 C:\xampp\htdocs\rico_store_management_app\system\CodeIgniter.php(931): App\Controllers\Users->add_edit_users_data()
+#7 C:\xampp\htdocs\rico_store_management_app\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#8 C:\xampp\htdocs\rico_store_management_app\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\rico_store_management_app\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\rico_store_management_app\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2021-06-23 12:48:54 --> pg_query(): Query failed: ERROR:  invalid input syntax for type integer: &quot;&quot;
+LINE 3:    ('', '', '', '', '', '', '12345')
+                ^
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp\\htdocs...', 170, Array)
+#1 C:\xampp\htdocs\rico_store_management_app\system\Database\Postgre\Connection.php(170): pg_query(Resource id #143, 'insert into use...')
+#2 C:\xampp\htdocs\rico_store_management_app\system\Database\BaseConnection.php(732): CodeIgniter\Database\Postgre\Connection->execute('insert into use...')
+#3 C:\xampp\htdocs\rico_store_management_app\system\Database\BaseConnection.php(647): CodeIgniter\Database\BaseConnection->simpleQuery('insert into use...')
+#4 C:\xampp\htdocs\rico_store_management_app\app\Models\Users.php(79): CodeIgniter\Database\BaseConnection->query('insert into use...')
+#5 C:\xampp\htdocs\rico_store_management_app\app\Controllers\Users.php(55): App\Models\Users->insert_update_user_data(NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL)
+#6 C:\xampp\htdocs\rico_store_management_app\system\CodeIgniter.php(931): App\Controllers\Users->add_edit_users_data()
+#7 C:\xampp\htdocs\rico_store_management_app\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#8 C:\xampp\htdocs\rico_store_management_app\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\rico_store_management_app\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\rico_store_management_app\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+ERROR - 2021-06-23 12:49:30 --> ErrorException: pg_query(): Query failed: ERROR:  invalid input syntax for type integer: &quot;&quot;
+LINE 3:    ('dfgj', '1', '45678', 'dfgh', 'fghj', '', '12345')
+                                                  ^ in C:\xampp\htdocs\rico_store_management_app\system\Database\Postgre\Connection.php:170
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp\\htdocs...', 170, Array)
+#1 C:\xampp\htdocs\rico_store_management_app\system\Database\Postgre\Connection.php(170): pg_query(Resource id #142, 'insert into use...')
+#2 C:\xampp\htdocs\rico_store_management_app\system\Database\BaseConnection.php(732): CodeIgniter\Database\Postgre\Connection->execute('insert into use...')
+#3 C:\xampp\htdocs\rico_store_management_app\system\Database\BaseConnection.php(647): CodeIgniter\Database\BaseConnection->simpleQuery('insert into use...')
+#4 C:\xampp\htdocs\rico_store_management_app\app\Models\Users.php(79): CodeIgniter\Database\BaseConnection->query('insert into use...')
+#5 C:\xampp\htdocs\rico_store_management_app\app\Controllers\Users.php(55): App\Models\Users->insert_update_user_data('0', 'dfgj', NULL, '45678', '1', 'dfgh', 'fghj', '')
+#6 C:\xampp\htdocs\rico_store_management_app\system\CodeIgniter.php(931): App\Controllers\Users->add_edit_users_data()
+#7 C:\xampp\htdocs\rico_store_management_app\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#8 C:\xampp\htdocs\rico_store_management_app\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\rico_store_management_app\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\rico_store_management_app\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2021-06-23 12:49:30 --> pg_query(): Query failed: ERROR:  invalid input syntax for type integer: &quot;&quot;
+LINE 3:    ('dfgj', '1', '45678', 'dfgh', 'fghj', '', '12345')
+                                                  ^
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp\\htdocs...', 170, Array)
+#1 C:\xampp\htdocs\rico_store_management_app\system\Database\Postgre\Connection.php(170): pg_query(Resource id #142, 'insert into use...')
+#2 C:\xampp\htdocs\rico_store_management_app\system\Database\BaseConnection.php(732): CodeIgniter\Database\Postgre\Connection->execute('insert into use...')
+#3 C:\xampp\htdocs\rico_store_management_app\system\Database\BaseConnection.php(647): CodeIgniter\Database\BaseConnection->simpleQuery('insert into use...')
+#4 C:\xampp\htdocs\rico_store_management_app\app\Models\Users.php(79): CodeIgniter\Database\BaseConnection->query('insert into use...')
+#5 C:\xampp\htdocs\rico_store_management_app\app\Controllers\Users.php(55): App\Models\Users->insert_update_user_data('0', 'dfgj', NULL, '45678', '1', 'dfgh', 'fghj', '')
+#6 C:\xampp\htdocs\rico_store_management_app\system\CodeIgniter.php(931): App\Controllers\Users->add_edit_users_data()
+#7 C:\xampp\htdocs\rico_store_management_app\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#8 C:\xampp\htdocs\rico_store_management_app\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\rico_store_management_app\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\rico_store_management_app\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2021-06-23 12:49:30 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Type is not supported". in C:\xampp\htdocs\rico_store_management_app\system\Format\JSONFormatter.php:42
+Stack trace:
+#0 C:\xampp\htdocs\rico_store_management_app\system\Format\JSONFormatter.php(42): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 C:\xampp\htdocs\rico_store_management_app\system\API\ResponseTrait.php(423): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 C:\xampp\htdocs\rico_store_management_app\system\API\ResponseTrait.php(114): CodeIgniter\Debug\Exceptions->format(Array)
+#3 C:\xampp\htdocs\rico_store_management_app\system\Debug\Exceptions.php(141): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+ERROR - 2021-06-23 12:49:38 --> ErrorException: pg_query(): Query failed: ERROR:  invalid input syntax for type integer: &quot;&quot;
+LINE 3:    ('', '', '', '', '', '', '12345')
+                ^ in C:\xampp\htdocs\rico_store_management_app\system\Database\Postgre\Connection.php:170
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp\\htdocs...', 170, Array)
+#1 C:\xampp\htdocs\rico_store_management_app\system\Database\Postgre\Connection.php(170): pg_query(Resource id #142, 'insert into use...')
+#2 C:\xampp\htdocs\rico_store_management_app\system\Database\BaseConnection.php(732): CodeIgniter\Database\Postgre\Connection->execute('insert into use...')
+#3 C:\xampp\htdocs\rico_store_management_app\system\Database\BaseConnection.php(647): CodeIgniter\Database\BaseConnection->simpleQuery('insert into use...')
+#4 C:\xampp\htdocs\rico_store_management_app\app\Models\Users.php(79): CodeIgniter\Database\BaseConnection->query('insert into use...')
+#5 C:\xampp\htdocs\rico_store_management_app\app\Controllers\Users.php(55): App\Models\Users->insert_update_user_data(NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL)
+#6 C:\xampp\htdocs\rico_store_management_app\system\CodeIgniter.php(931): App\Controllers\Users->add_edit_users_data()
+#7 C:\xampp\htdocs\rico_store_management_app\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#8 C:\xampp\htdocs\rico_store_management_app\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\rico_store_management_app\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\rico_store_management_app\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2021-06-23 12:49:38 --> pg_query(): Query failed: ERROR:  invalid input syntax for type integer: &quot;&quot;
+LINE 3:    ('', '', '', '', '', '', '12345')
+                ^
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp\\htdocs...', 170, Array)
+#1 C:\xampp\htdocs\rico_store_management_app\system\Database\Postgre\Connection.php(170): pg_query(Resource id #142, 'insert into use...')
+#2 C:\xampp\htdocs\rico_store_management_app\system\Database\BaseConnection.php(732): CodeIgniter\Database\Postgre\Connection->execute('insert into use...')
+#3 C:\xampp\htdocs\rico_store_management_app\system\Database\BaseConnection.php(647): CodeIgniter\Database\BaseConnection->simpleQuery('insert into use...')
+#4 C:\xampp\htdocs\rico_store_management_app\app\Models\Users.php(79): CodeIgniter\Database\BaseConnection->query('insert into use...')
+#5 C:\xampp\htdocs\rico_store_management_app\app\Controllers\Users.php(55): App\Models\Users->insert_update_user_data(NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL)
+#6 C:\xampp\htdocs\rico_store_management_app\system\CodeIgniter.php(931): App\Controllers\Users->add_edit_users_data()
+#7 C:\xampp\htdocs\rico_store_management_app\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#8 C:\xampp\htdocs\rico_store_management_app\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\rico_store_management_app\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\rico_store_management_app\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2021-06-23 15:04:05 --> Undefined variable: device_state_id
+#0 C:\xampp\htdocs\rico_store_management_app\app\Models\Device.php(48): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 48, Array)
+#1 C:\xampp\htdocs\rico_store_management_app\app\Controllers\Device.php(206): App\Models\Device->insert_update_device_data('0', 'gfgfg', '33223', '3233', 1, 8, '1', '2021/06/23')
+#2 C:\xampp\htdocs\rico_store_management_app\system\CodeIgniter.php(931): App\Controllers\Device->add_edit_returned_device()
+#3 C:\xampp\htdocs\rico_store_management_app\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Device))
+#4 C:\xampp\htdocs\rico_store_management_app\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\rico_store_management_app\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#6 C:\xampp\htdocs\rico_store_management_app\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+ERROR - 2021-06-23 15:05:16 --> ErrorException: pg_query(): Query failed: ERROR:  invalid input syntax for type integer: &quot;Choose...&quot;
+LINE 3:    ('', 'Choose...', '', '', '', '2', '12345')
+                ^ in C:\xampp\htdocs\rico_store_management_app\system\Database\Postgre\Connection.php:170
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp\\htdocs...', 170, Array)
+#1 C:\xampp\htdocs\rico_store_management_app\system\Database\Postgre\Connection.php(170): pg_query(Resource id #142, 'insert into use...')
+#2 C:\xampp\htdocs\rico_store_management_app\system\Database\BaseConnection.php(732): CodeIgniter\Database\Postgre\Connection->execute('insert into use...')
+#3 C:\xampp\htdocs\rico_store_management_app\system\Database\BaseConnection.php(647): CodeIgniter\Database\BaseConnection->simpleQuery('insert into use...')
+#4 C:\xampp\htdocs\rico_store_management_app\app\Models\Users.php(78): CodeIgniter\Database\BaseConnection->query('insert into use...')
+#5 C:\xampp\htdocs\rico_store_management_app\app\Controllers\Device.php(201): App\Models\Users->insert_update_user_data('0', '', NULL, 'Choose...', NULL, NULL, '2')
+#6 C:\xampp\htdocs\rico_store_management_app\system\CodeIgniter.php(931): App\Controllers\Device->add_edit_returned_device()
+#7 C:\xampp\htdocs\rico_store_management_app\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Device))
+#8 C:\xampp\htdocs\rico_store_management_app\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\rico_store_management_app\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\rico_store_management_app\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2021-06-23 15:05:16 --> pg_query(): Query failed: ERROR:  invalid input syntax for type integer: &quot;Choose...&quot;
+LINE 3:    ('', 'Choose...', '', '', '', '2', '12345')
+                ^
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp\\htdocs...', 170, Array)
+#1 C:\xampp\htdocs\rico_store_management_app\system\Database\Postgre\Connection.php(170): pg_query(Resource id #142, 'insert into use...')
+#2 C:\xampp\htdocs\rico_store_management_app\system\Database\BaseConnection.php(732): CodeIgniter\Database\Postgre\Connection->execute('insert into use...')
+#3 C:\xampp\htdocs\rico_store_management_app\system\Database\BaseConnection.php(647): CodeIgniter\Database\BaseConnection->simpleQuery('insert into use...')
+#4 C:\xampp\htdocs\rico_store_management_app\app\Models\Users.php(78): CodeIgniter\Database\BaseConnection->query('insert into use...')
+#5 C:\xampp\htdocs\rico_store_management_app\app\Controllers\Device.php(201): App\Models\Users->insert_update_user_data('0', '', NULL, 'Choose...', NULL, NULL, '2')
+#6 C:\xampp\htdocs\rico_store_management_app\system\CodeIgniter.php(931): App\Controllers\Device->add_edit_returned_device()
+#7 C:\xampp\htdocs\rico_store_management_app\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Device))
+#8 C:\xampp\htdocs\rico_store_management_app\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\rico_store_management_app\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\rico_store_management_app\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2021-06-23 15:05:16 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Type is not supported". in C:\xampp\htdocs\rico_store_management_app\system\Format\JSONFormatter.php:42
+Stack trace:
+#0 C:\xampp\htdocs\rico_store_management_app\system\Format\JSONFormatter.php(42): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 C:\xampp\htdocs\rico_store_management_app\system\API\ResponseTrait.php(423): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 C:\xampp\htdocs\rico_store_management_app\system\API\ResponseTrait.php(114): CodeIgniter\Debug\Exceptions->format(Array)
+#3 C:\xampp\htdocs\rico_store_management_app\system\Debug\Exceptions.php(141): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-06-23 15:06:21 --> Undefined variable: device_state_id
+#0 C:\xampp\htdocs\rico_store_management_app\app\Models\Device.php(48): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 48, Array)
+#1 C:\xampp\htdocs\rico_store_management_app\app\Controllers\Device.php(206): App\Models\Device->insert_update_device_data('0', 'Device1', '21212', '2113', 1, 9, '1', '2021/06/23')
+#2 C:\xampp\htdocs\rico_store_management_app\system\CodeIgniter.php(931): App\Controllers\Device->add_edit_returned_device()
+#3 C:\xampp\htdocs\rico_store_management_app\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Device))
+#4 C:\xampp\htdocs\rico_store_management_app\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\rico_store_management_app\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#6 C:\xampp\htdocs\rico_store_management_app\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+ERROR - 2021-06-23 15:08:14 --> ErrorException: pg_query(): Query failed: ERROR:  syntax error at or near &quot;','&quot;
+LINE 3:         ('Device1', '21212', '2113',1','10','1','2021/06/23'...
+                                             ^ in C:\xampp\htdocs\rico_store_management_app\system\Database\Postgre\Connection.php:170
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp\\htdocs...', 170, Array)
+#1 C:\xampp\htdocs\rico_store_management_app\system\Database\Postgre\Connection.php(170): pg_query(Resource id #142, 'insert into dev...')
+#2 C:\xampp\htdocs\rico_store_management_app\system\Database\BaseConnection.php(732): CodeIgniter\Database\Postgre\Connection->execute('insert into dev...')
+#3 C:\xampp\htdocs\rico_store_management_app\system\Database\BaseConnection.php(647): CodeIgniter\Database\BaseConnection->simpleQuery('insert into dev...')
+#4 C:\xampp\htdocs\rico_store_management_app\app\Models\Device.php(62): CodeIgniter\Database\BaseConnection->query('insert into dev...')
+#5 C:\xampp\htdocs\rico_store_management_app\app\Controllers\Device.php(206): App\Models\Device->insert_update_device_data('0', 'Device1', '21212', '2113', 1, 10, '1', '2021/06/23')
+#6 C:\xampp\htdocs\rico_store_management_app\system\CodeIgniter.php(931): App\Controllers\Device->add_edit_returned_device()
+#7 C:\xampp\htdocs\rico_store_management_app\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Device))
+#8 C:\xampp\htdocs\rico_store_management_app\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\rico_store_management_app\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\rico_store_management_app\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2021-06-23 15:08:14 --> pg_query(): Query failed: ERROR:  syntax error at or near &quot;','&quot;
+LINE 3:         ('Device1', '21212', '2113',1','10','1','2021/06/23'...
+                                             ^
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp\\htdocs...', 170, Array)
+#1 C:\xampp\htdocs\rico_store_management_app\system\Database\Postgre\Connection.php(170): pg_query(Resource id #142, 'insert into dev...')
+#2 C:\xampp\htdocs\rico_store_management_app\system\Database\BaseConnection.php(732): CodeIgniter\Database\Postgre\Connection->execute('insert into dev...')
+#3 C:\xampp\htdocs\rico_store_management_app\system\Database\BaseConnection.php(647): CodeIgniter\Database\BaseConnection->simpleQuery('insert into dev...')
+#4 C:\xampp\htdocs\rico_store_management_app\app\Models\Device.php(62): CodeIgniter\Database\BaseConnection->query('insert into dev...')
+#5 C:\xampp\htdocs\rico_store_management_app\app\Controllers\Device.php(206): App\Models\Device->insert_update_device_data('0', 'Device1', '21212', '2113', 1, 10, '1', '2021/06/23')
+#6 C:\xampp\htdocs\rico_store_management_app\system\CodeIgniter.php(931): App\Controllers\Device->add_edit_returned_device()
+#7 C:\xampp\htdocs\rico_store_management_app\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Device))
+#8 C:\xampp\htdocs\rico_store_management_app\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\rico_store_management_app\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\rico_store_management_app\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2021-06-23 15:08:14 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Type is not supported". in C:\xampp\htdocs\rico_store_management_app\system\Format\JSONFormatter.php:42
+Stack trace:
+#0 C:\xampp\htdocs\rico_store_management_app\system\Format\JSONFormatter.php(42): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 C:\xampp\htdocs\rico_store_management_app\system\API\ResponseTrait.php(423): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 C:\xampp\htdocs\rico_store_management_app\system\API\ResponseTrait.php(114): CodeIgniter\Debug\Exceptions->format(Array)
+#3 C:\xampp\htdocs\rico_store_management_app\system\Debug\Exceptions.php(141): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+ERROR - 2021-06-23 15:09:16 --> ErrorException: pg_query(): Query failed: ERROR:  syntax error at or near &quot;','&quot;
+LINE 3:         ('yeyye', '2222', '23',1','11','1','2021/06/23' )
+                                        ^ in C:\xampp\htdocs\rico_store_management_app\system\Database\Postgre\Connection.php:170
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp\\htdocs...', 170, Array)
+#1 C:\xampp\htdocs\rico_store_management_app\system\Database\Postgre\Connection.php(170): pg_query(Resource id #142, 'insert into dev...')
+#2 C:\xampp\htdocs\rico_store_management_app\system\Database\BaseConnection.php(732): CodeIgniter\Database\Postgre\Connection->execute('insert into dev...')
+#3 C:\xampp\htdocs\rico_store_management_app\system\Database\BaseConnection.php(647): CodeIgniter\Database\BaseConnection->simpleQuery('insert into dev...')
+#4 C:\xampp\htdocs\rico_store_management_app\app\Models\Device.php(62): CodeIgniter\Database\BaseConnection->query('insert into dev...')
+#5 C:\xampp\htdocs\rico_store_management_app\app\Controllers\Device.php(206): App\Models\Device->insert_update_device_data('0', 'yeyye', '2222', '23', 1, 11, '1', '2021/06/23')
+#6 C:\xampp\htdocs\rico_store_management_app\system\CodeIgniter.php(931): App\Controllers\Device->add_edit_returned_device()
+#7 C:\xampp\htdocs\rico_store_management_app\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Device))
+#8 C:\xampp\htdocs\rico_store_management_app\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\rico_store_management_app\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\rico_store_management_app\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2021-06-23 15:09:16 --> pg_query(): Query failed: ERROR:  syntax error at or near &quot;','&quot;
+LINE 3:         ('yeyye', '2222', '23',1','11','1','2021/06/23' )
+                                        ^
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp\\htdocs...', 170, Array)
+#1 C:\xampp\htdocs\rico_store_management_app\system\Database\Postgre\Connection.php(170): pg_query(Resource id #142, 'insert into dev...')
+#2 C:\xampp\htdocs\rico_store_management_app\system\Database\BaseConnection.php(732): CodeIgniter\Database\Postgre\Connection->execute('insert into dev...')
+#3 C:\xampp\htdocs\rico_store_management_app\system\Database\BaseConnection.php(647): CodeIgniter\Database\BaseConnection->simpleQuery('insert into dev...')
+#4 C:\xampp\htdocs\rico_store_management_app\app\Models\Device.php(62): CodeIgniter\Database\BaseConnection->query('insert into dev...')
+#5 C:\xampp\htdocs\rico_store_management_app\app\Controllers\Device.php(206): App\Models\Device->insert_update_device_data('0', 'yeyye', '2222', '23', 1, 11, '1', '2021/06/23')
+#6 C:\xampp\htdocs\rico_store_management_app\system\CodeIgniter.php(931): App\Controllers\Device->add_edit_returned_device()
+#7 C:\xampp\htdocs\rico_store_management_app\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Device))
+#8 C:\xampp\htdocs\rico_store_management_app\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\rico_store_management_app\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\rico_store_management_app\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2021-06-23 15:09:16 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Type is not supported". in C:\xampp\htdocs\rico_store_management_app\system\Format\JSONFormatter.php:42
+Stack trace:
+#0 C:\xampp\htdocs\rico_store_management_app\system\Format\JSONFormatter.php(42): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 C:\xampp\htdocs\rico_store_management_app\system\API\ResponseTrait.php(423): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 C:\xampp\htdocs\rico_store_management_app\system\API\ResponseTrait.php(114): CodeIgniter\Debug\Exceptions->format(Array)
+#3 C:\xampp\htdocs\rico_store_management_app\system\Debug\Exceptions.php(141): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+ERROR - 2021-06-23 15:14:01 --> ErrorException: pg_query(): Query failed: ERROR:  syntax error at or near &quot;','&quot;
+LINE 3:         ('yeyye', '2222', '23',1','14','1' )
+                                        ^ in C:\xampp\htdocs\rico_store_management_app\system\Database\Postgre\Connection.php:170
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp\\htdocs...', 170, Array)
+#1 C:\xampp\htdocs\rico_store_management_app\system\Database\Postgre\Connection.php(170): pg_query(Resource id #142, 'insert into dev...')
+#2 C:\xampp\htdocs\rico_store_management_app\system\Database\BaseConnection.php(732): CodeIgniter\Database\Postgre\Connection->execute('insert into dev...')
+#3 C:\xampp\htdocs\rico_store_management_app\system\Database\BaseConnection.php(647): CodeIgniter\Database\BaseConnection->simpleQuery('insert into dev...')
+#4 C:\xampp\htdocs\rico_store_management_app\app\Models\Device.php(62): CodeIgniter\Database\BaseConnection->query('insert into dev...')
+#5 C:\xampp\htdocs\rico_store_management_app\app\Controllers\Device.php(207): App\Models\Device->insert_update_device_data('0', 'yeyye', '2222', '23', 1, 14, '1', '2021/06/23')
+#6 C:\xampp\htdocs\rico_store_management_app\system\CodeIgniter.php(931): App\Controllers\Device->add_edit_returned_device()
+#7 C:\xampp\htdocs\rico_store_management_app\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Device))
+#8 C:\xampp\htdocs\rico_store_management_app\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\rico_store_management_app\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\rico_store_management_app\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2021-06-23 15:14:01 --> pg_query(): Query failed: ERROR:  syntax error at or near &quot;','&quot;
+LINE 3:         ('yeyye', '2222', '23',1','14','1' )
+                                        ^
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp\\htdocs...', 170, Array)
+#1 C:\xampp\htdocs\rico_store_management_app\system\Database\Postgre\Connection.php(170): pg_query(Resource id #142, 'insert into dev...')
+#2 C:\xampp\htdocs\rico_store_management_app\system\Database\BaseConnection.php(732): CodeIgniter\Database\Postgre\Connection->execute('insert into dev...')
+#3 C:\xampp\htdocs\rico_store_management_app\system\Database\BaseConnection.php(647): CodeIgniter\Database\BaseConnection->simpleQuery('insert into dev...')
+#4 C:\xampp\htdocs\rico_store_management_app\app\Models\Device.php(62): CodeIgniter\Database\BaseConnection->query('insert into dev...')
+#5 C:\xampp\htdocs\rico_store_management_app\app\Controllers\Device.php(207): App\Models\Device->insert_update_device_data('0', 'yeyye', '2222', '23', 1, 14, '1', '2021/06/23')
+#6 C:\xampp\htdocs\rico_store_management_app\system\CodeIgniter.php(931): App\Controllers\Device->add_edit_returned_device()
+#7 C:\xampp\htdocs\rico_store_management_app\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Device))
+#8 C:\xampp\htdocs\rico_store_management_app\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\rico_store_management_app\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\rico_store_management_app\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2021-06-23 15:14:01 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Type is not supported". in C:\xampp\htdocs\rico_store_management_app\system\Format\JSONFormatter.php:42
+Stack trace:
+#0 C:\xampp\htdocs\rico_store_management_app\system\Format\JSONFormatter.php(42): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 C:\xampp\htdocs\rico_store_management_app\system\API\ResponseTrait.php(423): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 C:\xampp\htdocs\rico_store_management_app\system\API\ResponseTrait.php(114): CodeIgniter\Debug\Exceptions->format(Array)
+#3 C:\xampp\htdocs\rico_store_management_app\system\Debug\Exceptions.php(141): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+ERROR - 2021-06-23 15:14:56 --> ErrorException: pg_query(): Query failed: ERROR:  null value in column &quot;device_serial_no&quot; violates not-null constraint
+DETAIL:  Failing row contains (17, yeyye, null, null, null, null, null, null, null, null, null, null). in C:\xampp\htdocs\rico_store_management_app\system\Database\Postgre\Connection.php:170
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp\\htdocs...', 170, Array)
+#1 C:\xampp\htdocs\rico_store_management_app\system\Database\Postgre\Connection.php(170): pg_query(Resource id #142, 'insert into dev...')
+#2 C:\xampp\htdocs\rico_store_management_app\system\Database\BaseConnection.php(732): CodeIgniter\Database\Postgre\Connection->execute('insert into dev...')
+#3 C:\xampp\htdocs\rico_store_management_app\system\Database\BaseConnection.php(647): CodeIgniter\Database\BaseConnection->simpleQuery('insert into dev...')
+#4 C:\xampp\htdocs\rico_store_management_app\app\Models\Device.php(62): CodeIgniter\Database\BaseConnection->query('insert into dev...')
+#5 C:\xampp\htdocs\rico_store_management_app\app\Controllers\Device.php(207): App\Models\Device->insert_update_device_data('0', 'yeyye', '2222', '23', 1, 15, '1', '2021/06/23')
+#6 C:\xampp\htdocs\rico_store_management_app\system\CodeIgniter.php(931): App\Controllers\Device->add_edit_returned_device()
+#7 C:\xampp\htdocs\rico_store_management_app\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Device))
+#8 C:\xampp\htdocs\rico_store_management_app\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\rico_store_management_app\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\rico_store_management_app\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2021-06-23 15:14:56 --> pg_query(): Query failed: ERROR:  null value in column &quot;device_serial_no&quot; violates not-null constraint
+DETAIL:  Failing row contains (17, yeyye, null, null, null, null, null, null, null, null, null, null).
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp\\htdocs...', 170, Array)
+#1 C:\xampp\htdocs\rico_store_management_app\system\Database\Postgre\Connection.php(170): pg_query(Resource id #142, 'insert into dev...')
+#2 C:\xampp\htdocs\rico_store_management_app\system\Database\BaseConnection.php(732): CodeIgniter\Database\Postgre\Connection->execute('insert into dev...')
+#3 C:\xampp\htdocs\rico_store_management_app\system\Database\BaseConnection.php(647): CodeIgniter\Database\BaseConnection->simpleQuery('insert into dev...')
+#4 C:\xampp\htdocs\rico_store_management_app\app\Models\Device.php(62): CodeIgniter\Database\BaseConnection->query('insert into dev...')
+#5 C:\xampp\htdocs\rico_store_management_app\app\Controllers\Device.php(207): App\Models\Device->insert_update_device_data('0', 'yeyye', '2222', '23', 1, 15, '1', '2021/06/23')
+#6 C:\xampp\htdocs\rico_store_management_app\system\CodeIgniter.php(931): App\Controllers\Device->add_edit_returned_device()
+#7 C:\xampp\htdocs\rico_store_management_app\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Device))
+#8 C:\xampp\htdocs\rico_store_management_app\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\rico_store_management_app\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\rico_store_management_app\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2021-06-23 15:14:56 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Type is not supported". in C:\xampp\htdocs\rico_store_management_app\system\Format\JSONFormatter.php:42
+Stack trace:
+#0 C:\xampp\htdocs\rico_store_management_app\system\Format\JSONFormatter.php(42): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 C:\xampp\htdocs\rico_store_management_app\system\API\ResponseTrait.php(423): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 C:\xampp\htdocs\rico_store_management_app\system\API\ResponseTrait.php(114): CodeIgniter\Debug\Exceptions->format(Array)
+#3 C:\xampp\htdocs\rico_store_management_app\system\Debug\Exceptions.php(141): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+ERROR - 2021-06-23 15:17:27 --> ErrorException: pg_query(): Query failed: ERROR:  INSERT has more expressions than target columns
+LINE 3:         ('yeyye', '2222', '23','1','16','1','2021/06/23' )
+                          ^ in C:\xampp\htdocs\rico_store_management_app\system\Database\Postgre\Connection.php:170
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp\\htdocs...', 170, Array)
+#1 C:\xampp\htdocs\rico_store_management_app\system\Database\Postgre\Connection.php(170): pg_query(Resource id #142, 'insert into dev...')
+#2 C:\xampp\htdocs\rico_store_management_app\system\Database\BaseConnection.php(732): CodeIgniter\Database\Postgre\Connection->execute('insert into dev...')
+#3 C:\xampp\htdocs\rico_store_management_app\system\Database\BaseConnection.php(647): CodeIgniter\Database\BaseConnection->simpleQuery('insert into dev...')
+#4 C:\xampp\htdocs\rico_store_management_app\app\Models\Device.php(62): CodeIgniter\Database\BaseConnection->query('insert into dev...')
+#5 C:\xampp\htdocs\rico_store_management_app\app\Controllers\Device.php(207): App\Models\Device->insert_update_device_data('0', 'yeyye', '2222', '23', 1, 16, '1', '2021/06/23')
+#6 C:\xampp\htdocs\rico_store_management_app\system\CodeIgniter.php(931): App\Controllers\Device->add_edit_returned_device()
+#7 C:\xampp\htdocs\rico_store_management_app\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Device))
+#8 C:\xampp\htdocs\rico_store_management_app\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\rico_store_management_app\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\rico_store_management_app\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2021-06-23 15:17:27 --> pg_query(): Query failed: ERROR:  INSERT has more expressions than target columns
+LINE 3:         ('yeyye', '2222', '23','1','16','1','2021/06/23' )
+                          ^
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp\\htdocs...', 170, Array)
+#1 C:\xampp\htdocs\rico_store_management_app\system\Database\Postgre\Connection.php(170): pg_query(Resource id #142, 'insert into dev...')
+#2 C:\xampp\htdocs\rico_store_management_app\system\Database\BaseConnection.php(732): CodeIgniter\Database\Postgre\Connection->execute('insert into dev...')
+#3 C:\xampp\htdocs\rico_store_management_app\system\Database\BaseConnection.php(647): CodeIgniter\Database\BaseConnection->simpleQuery('insert into dev...')
+#4 C:\xampp\htdocs\rico_store_management_app\app\Models\Device.php(62): CodeIgniter\Database\BaseConnection->query('insert into dev...')
+#5 C:\xampp\htdocs\rico_store_management_app\app\Controllers\Device.php(207): App\Models\Device->insert_update_device_data('0', 'yeyye', '2222', '23', 1, 16, '1', '2021/06/23')
+#6 C:\xampp\htdocs\rico_store_management_app\system\CodeIgniter.php(931): App\Controllers\Device->add_edit_returned_device()
+#7 C:\xampp\htdocs\rico_store_management_app\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Device))
+#8 C:\xampp\htdocs\rico_store_management_app\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\rico_store_management_app\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\rico_store_management_app\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2021-06-23 15:17:27 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Type is not supported". in C:\xampp\htdocs\rico_store_management_app\system\Format\JSONFormatter.php:42
+Stack trace:
+#0 C:\xampp\htdocs\rico_store_management_app\system\Format\JSONFormatter.php(42): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 C:\xampp\htdocs\rico_store_management_app\system\API\ResponseTrait.php(423): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 C:\xampp\htdocs\rico_store_management_app\system\API\ResponseTrait.php(114): CodeIgniter\Debug\Exceptions->format(Array)
+#3 C:\xampp\htdocs\rico_store_management_app\system\Debug\Exceptions.php(141): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+ERROR - 2021-06-23 15:17:54 --> ErrorException: pg_query(): Query failed: ERROR:  INSERT has more expressions than target columns
+LINE 3:         ('yeyye', '2222', '23','1','17','1','2021/06/23' )
+                                                    ^ in C:\xampp\htdocs\rico_store_management_app\system\Database\Postgre\Connection.php:170
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp\\htdocs...', 170, Array)
+#1 C:\xampp\htdocs\rico_store_management_app\system\Database\Postgre\Connection.php(170): pg_query(Resource id #142, 'insert into dev...')
+#2 C:\xampp\htdocs\rico_store_management_app\system\Database\BaseConnection.php(732): CodeIgniter\Database\Postgre\Connection->execute('insert into dev...')
+#3 C:\xampp\htdocs\rico_store_management_app\system\Database\BaseConnection.php(647): CodeIgniter\Database\BaseConnection->simpleQuery('insert into dev...')
+#4 C:\xampp\htdocs\rico_store_management_app\app\Models\Device.php(62): CodeIgniter\Database\BaseConnection->query('insert into dev...')
+#5 C:\xampp\htdocs\rico_store_management_app\app\Controllers\Device.php(207): App\Models\Device->insert_update_device_data('0', 'yeyye', '2222', '23', 1, 17, '1', '2021/06/23')
+#6 C:\xampp\htdocs\rico_store_management_app\system\CodeIgniter.php(931): App\Controllers\Device->add_edit_returned_device()
+#7 C:\xampp\htdocs\rico_store_management_app\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Device))
+#8 C:\xampp\htdocs\rico_store_management_app\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\rico_store_management_app\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\rico_store_management_app\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2021-06-23 15:17:54 --> pg_query(): Query failed: ERROR:  INSERT has more expressions than target columns
+LINE 3:         ('yeyye', '2222', '23','1','17','1','2021/06/23' )
+                                                    ^
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp\\htdocs...', 170, Array)
+#1 C:\xampp\htdocs\rico_store_management_app\system\Database\Postgre\Connection.php(170): pg_query(Resource id #142, 'insert into dev...')
+#2 C:\xampp\htdocs\rico_store_management_app\system\Database\BaseConnection.php(732): CodeIgniter\Database\Postgre\Connection->execute('insert into dev...')
+#3 C:\xampp\htdocs\rico_store_management_app\system\Database\BaseConnection.php(647): CodeIgniter\Database\BaseConnection->simpleQuery('insert into dev...')
+#4 C:\xampp\htdocs\rico_store_management_app\app\Models\Device.php(62): CodeIgniter\Database\BaseConnection->query('insert into dev...')
+#5 C:\xampp\htdocs\rico_store_management_app\app\Controllers\Device.php(207): App\Models\Device->insert_update_device_data('0', 'yeyye', '2222', '23', 1, 17, '1', '2021/06/23')
+#6 C:\xampp\htdocs\rico_store_management_app\system\CodeIgniter.php(931): App\Controllers\Device->add_edit_returned_device()
+#7 C:\xampp\htdocs\rico_store_management_app\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Device))
+#8 C:\xampp\htdocs\rico_store_management_app\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\rico_store_management_app\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\rico_store_management_app\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2021-06-23 15:17:54 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Type is not supported". in C:\xampp\htdocs\rico_store_management_app\system\Format\JSONFormatter.php:42
+Stack trace:
+#0 C:\xampp\htdocs\rico_store_management_app\system\Format\JSONFormatter.php(42): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 C:\xampp\htdocs\rico_store_management_app\system\API\ResponseTrait.php(423): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 C:\xampp\htdocs\rico_store_management_app\system\API\ResponseTrait.php(114): CodeIgniter\Debug\Exceptions->format(Array)
+#3 C:\xampp\htdocs\rico_store_management_app\system\Debug\Exceptions.php(141): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+ERROR - 2021-06-23 15:19:07 --> ErrorException: pg_query(): Query failed: ERROR:  null value in column &quot;devic_state_id&quot; violates not-null constraint
+DETAIL:  Failing row contains (18, yeyye, 2222, 23, null, null, 1, null, null, 18, 2021-06-23, 1). in C:\xampp\htdocs\rico_store_management_app\system\Database\Postgre\Connection.php:170
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp\\htdocs...', 170, Array)
+#1 C:\xampp\htdocs\rico_store_management_app\system\Database\Postgre\Connection.php(170): pg_query(Resource id #142, 'insert into dev...')
+#2 C:\xampp\htdocs\rico_store_management_app\system\Database\BaseConnection.php(732): CodeIgniter\Database\Postgre\Connection->execute('insert into dev...')
+#3 C:\xampp\htdocs\rico_store_management_app\system\Database\BaseConnection.php(647): CodeIgniter\Database\BaseConnection->simpleQuery('insert into dev...')
+#4 C:\xampp\htdocs\rico_store_management_app\app\Models\Device.php(62): CodeIgniter\Database\BaseConnection->query('insert into dev...')
+#5 C:\xampp\htdocs\rico_store_management_app\app\Controllers\Device.php(207): App\Models\Device->insert_update_device_data('0', 'yeyye', '2222', '23', 1, 18, '1', '2021/06/23')
+#6 C:\xampp\htdocs\rico_store_management_app\system\CodeIgniter.php(931): App\Controllers\Device->add_edit_returned_device()
+#7 C:\xampp\htdocs\rico_store_management_app\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Device))
+#8 C:\xampp\htdocs\rico_store_management_app\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\rico_store_management_app\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\rico_store_management_app\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2021-06-23 15:19:07 --> pg_query(): Query failed: ERROR:  null value in column &quot;devic_state_id&quot; violates not-null constraint
+DETAIL:  Failing row contains (18, yeyye, 2222, 23, null, null, 1, null, null, 18, 2021-06-23, 1).
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp\\htdocs...', 170, Array)
+#1 C:\xampp\htdocs\rico_store_management_app\system\Database\Postgre\Connection.php(170): pg_query(Resource id #142, 'insert into dev...')
+#2 C:\xampp\htdocs\rico_store_management_app\system\Database\BaseConnection.php(732): CodeIgniter\Database\Postgre\Connection->execute('insert into dev...')
+#3 C:\xampp\htdocs\rico_store_management_app\system\Database\BaseConnection.php(647): CodeIgniter\Database\BaseConnection->simpleQuery('insert into dev...')
+#4 C:\xampp\htdocs\rico_store_management_app\app\Models\Device.php(62): CodeIgniter\Database\BaseConnection->query('insert into dev...')
+#5 C:\xampp\htdocs\rico_store_management_app\app\Controllers\Device.php(207): App\Models\Device->insert_update_device_data('0', 'yeyye', '2222', '23', 1, 18, '1', '2021/06/23')
+#6 C:\xampp\htdocs\rico_store_management_app\system\CodeIgniter.php(931): App\Controllers\Device->add_edit_returned_device()
+#7 C:\xampp\htdocs\rico_store_management_app\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Device))
+#8 C:\xampp\htdocs\rico_store_management_app\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\rico_store_management_app\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\rico_store_management_app\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2021-06-23 15:19:07 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Type is not supported". in C:\xampp\htdocs\rico_store_management_app\system\Format\JSONFormatter.php:42
+Stack trace:
+#0 C:\xampp\htdocs\rico_store_management_app\system\Format\JSONFormatter.php(42): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 C:\xampp\htdocs\rico_store_management_app\system\API\ResponseTrait.php(423): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 C:\xampp\htdocs\rico_store_management_app\system\API\ResponseTrait.php(114): CodeIgniter\Debug\Exceptions->format(Array)
+#3 C:\xampp\htdocs\rico_store_management_app\system\Debug\Exceptions.php(141): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-06-23 15:24:01 --> Undefined property: stdClass::$devic_state_id
+#0 C:\xampp\htdocs\rico_store_management_app\app\Views\Dashboards\admin_dashboard.php(208): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 208, Array)
+#1 C:\xampp\htdocs\rico_store_management_app\system\View\View.php(230): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\rico_store_management_app\system\View\View.php(232): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\rico_store_management_app\system\Common.php(1250): CodeIgniter\View\View->render('Dashboards\\admi...', Array, true)
+#4 C:\xampp\htdocs\rico_store_management_app\app\Controllers\Dashboard.php(18): view('Dashboards\\admi...', Array)
+#5 C:\xampp\htdocs\rico_store_management_app\system\CodeIgniter.php(931): App\Controllers\Dashboard->admin_dashboard()
+#6 C:\xampp\htdocs\rico_store_management_app\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#7 C:\xampp\htdocs\rico_store_management_app\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\rico_store_management_app\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\rico_store_management_app\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2021-06-23 15:53:44 --> Undefined property: stdClass::$devic_state_id
+#0 C:\xampp\htdocs\rico_store_management_app\app\Views\Device\all_devices.php(46): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 46, Array)
+#1 C:\xampp\htdocs\rico_store_management_app\system\View\View.php(230): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\rico_store_management_app\system\View\View.php(232): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\rico_store_management_app\system\Common.php(1250): CodeIgniter\View\View->render('Device\\all_devi...', Array, true)
+#4 C:\xampp\htdocs\rico_store_management_app\app\Controllers\Device.php(55): view('Device\\all_devi...', Array)
+#5 C:\xampp\htdocs\rico_store_management_app\system\CodeIgniter.php(931): App\Controllers\Device->load_devices_list()
+#6 C:\xampp\htdocs\rico_store_management_app\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Device))
+#7 C:\xampp\htdocs\rico_store_management_app\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\rico_store_management_app\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\rico_store_management_app\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2021-06-23 16:02:24 --> Call to undefined method App\Models\Region::get_all_user_groups
+#0 C:\xampp\htdocs\rico_store_management_app\app\Controllers\Users.php(24): CodeIgniter\Model->__call('get_all_user_gr...', Array)
+#1 C:\xampp\htdocs\rico_store_management_app\system\CodeIgniter.php(931): App\Controllers\Users->load_add_edit_users_views()
+#2 C:\xampp\htdocs\rico_store_management_app\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#3 C:\xampp\htdocs\rico_store_management_app\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\rico_store_management_app\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\rico_store_management_app\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2021-06-23 16:02:38 --> Call to undefined method App\Models\Region::get_all_user_groups
+#0 C:\xampp\htdocs\rico_store_management_app\app\Controllers\Users.php(24): CodeIgniter\Model->__call('get_all_user_gr...', Array)
+#1 C:\xampp\htdocs\rico_store_management_app\system\CodeIgniter.php(931): App\Controllers\Users->load_add_edit_users_views()
+#2 C:\xampp\htdocs\rico_store_management_app\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#3 C:\xampp\htdocs\rico_store_management_app\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\rico_store_management_app\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\rico_store_management_app\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2021-06-23 16:46:51 --> Undefined variable: user_account_id
+#0 C:\xampp\htdocs\rico_store_management_app\app\Models\Users.php(90): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 90, Array)
+#1 C:\xampp\htdocs\rico_store_management_app\app\Controllers\Users.php(82): App\Models\Users->get_user_by_national_id_or_email('', '')
+#2 C:\xampp\htdocs\rico_store_management_app\system\CodeIgniter.php(931): App\Controllers\Users->check_if_user_exists()
+#3 C:\xampp\htdocs\rico_store_management_app\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#4 C:\xampp\htdocs\rico_store_management_app\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\rico_store_management_app\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#6 C:\xampp\htdocs\rico_store_management_app\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+CRITICAL - 2021-06-23 16:47:01 --> Undefined variable: user_account_id
+#0 C:\xampp\htdocs\rico_store_management_app\app\Models\Users.php(90): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 90, Array)
+#1 C:\xampp\htdocs\rico_store_management_app\app\Controllers\Users.php(82): App\Models\Users->get_user_by_national_id_or_email('xzxxz', '')
+#2 C:\xampp\htdocs\rico_store_management_app\system\CodeIgniter.php(931): App\Controllers\Users->check_if_user_exists()
+#3 C:\xampp\htdocs\rico_store_management_app\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#4 C:\xampp\htdocs\rico_store_management_app\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\rico_store_management_app\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#6 C:\xampp\htdocs\rico_store_management_app\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+CRITICAL - 2021-06-23 16:48:20 --> Trying to get property 'user_account_id' of non-object
+#0 C:\xampp\htdocs\rico_store_management_app\app\Controllers\Users.php(83): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', 'C:\\xampp\\htdocs...', 83, Array)
+#1 C:\xampp\htdocs\rico_store_management_app\system\CodeIgniter.php(931): App\Controllers\Users->check_if_user_exists()
+#2 C:\xampp\htdocs\rico_store_management_app\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#3 C:\xampp\htdocs\rico_store_management_app\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\rico_store_management_app\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\rico_store_management_app\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2021-06-23 16:51:57 --> Cannot use object of type stdClass as array
+#0 C:\xampp\htdocs\rico_store_management_app\system\CodeIgniter.php(931): App\Controllers\Users->check_if_user_exists()
+#1 C:\xampp\htdocs\rico_store_management_app\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#2 C:\xampp\htdocs\rico_store_management_app\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\rico_store_management_app\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\rico_store_management_app\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2021-06-23 16:52:53 --> Cannot use object of type stdClass as array
+#0 C:\xampp\htdocs\rico_store_management_app\system\CodeIgniter.php(931): App\Controllers\Users->check_if_user_exists()
+#1 C:\xampp\htdocs\rico_store_management_app\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#2 C:\xampp\htdocs\rico_store_management_app\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\rico_store_management_app\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\rico_store_management_app\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2021-06-23 16:52:58 --> Cannot use object of type stdClass as array
+#0 C:\xampp\htdocs\rico_store_management_app\system\CodeIgniter.php(931): App\Controllers\Users->check_if_user_exists()
+#1 C:\xampp\htdocs\rico_store_management_app\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#2 C:\xampp\htdocs\rico_store_management_app\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\rico_store_management_app\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\rico_store_management_app\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2021-06-23 16:53:56 --> Undefined property: App\Controllers\Users::$UsersModel
+#0 C:\xampp\htdocs\rico_store_management_app\app\Controllers\Users.php(102): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 102, Array)
+#1 C:\xampp\htdocs\rico_store_management_app\system\CodeIgniter.php(931): App\Controllers\Users->display_specific_user()
+#2 C:\xampp\htdocs\rico_store_management_app\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#3 C:\xampp\htdocs\rico_store_management_app\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\rico_store_management_app\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\rico_store_management_app\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2021-06-23 16:55:01 --> Undefined variable: users_list
+#0 C:\xampp\htdocs\rico_store_management_app\app\Views\Users\all_users.php(26): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 26, Array)
+#1 C:\xampp\htdocs\rico_store_management_app\system\View\View.php(230): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\rico_store_management_app\system\View\View.php(232): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\rico_store_management_app\system\Common.php(1250): CodeIgniter\View\View->render('Users\\all_users', Array, true)
+#4 C:\xampp\htdocs\rico_store_management_app\app\Controllers\Users.php(104): view('Users\\all_users', Array)
+#5 C:\xampp\htdocs\rico_store_management_app\system\CodeIgniter.php(931): App\Controllers\Users->display_specific_user()
+#6 C:\xampp\htdocs\rico_store_management_app\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#7 C:\xampp\htdocs\rico_store_management_app\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\rico_store_management_app\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\rico_store_management_app\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2021-06-23 16:55:02 --> Undefined variable: users_list
+#0 C:\xampp\htdocs\rico_store_management_app\app\Views\Users\all_users.php(26): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 26, Array)
+#1 C:\xampp\htdocs\rico_store_management_app\system\View\View.php(230): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\rico_store_management_app\system\View\View.php(232): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\rico_store_management_app\system\Common.php(1250): CodeIgniter\View\View->render('Users\\all_users', Array, true)
+#4 C:\xampp\htdocs\rico_store_management_app\app\Controllers\Users.php(104): view('Users\\all_users', Array)
+#5 C:\xampp\htdocs\rico_store_management_app\system\CodeIgniter.php(931): App\Controllers\Users->display_specific_user()
+#6 C:\xampp\htdocs\rico_store_management_app\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#7 C:\xampp\htdocs\rico_store_management_app\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\rico_store_management_app\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\rico_store_management_app\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2021-06-23 16:55:50 --> Trying to get property 'user_account_first_name' of non-object
+#0 C:\xampp\htdocs\rico_store_management_app\app\Views\Users\all_users.php(31): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', 'C:\\xampp\\htdocs...', 31, Array)
+#1 C:\xampp\htdocs\rico_store_management_app\system\View\View.php(230): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\rico_store_management_app\system\View\View.php(232): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\rico_store_management_app\system\Common.php(1250): CodeIgniter\View\View->render('Users\\all_users', Array, true)
+#4 C:\xampp\htdocs\rico_store_management_app\app\Controllers\Users.php(104): view('Users\\all_users', Array)
+#5 C:\xampp\htdocs\rico_store_management_app\system\CodeIgniter.php(931): App\Controllers\Users->display_specific_user()
+#6 C:\xampp\htdocs\rico_store_management_app\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#7 C:\xampp\htdocs\rico_store_management_app\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\rico_store_management_app\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\rico_store_management_app\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2021-06-23 17:07:07 --> Trying to get property 'user_account_first_name' of non-object
+#0 C:\xampp\htdocs\rico_store_management_app\app\Views\Users\user_filtered.php(18): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', 'C:\\xampp\\htdocs...', 18, Array)
+#1 C:\xampp\htdocs\rico_store_management_app\system\View\View.php(230): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\rico_store_management_app\system\View\View.php(232): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\rico_store_management_app\system\Common.php(1250): CodeIgniter\View\View->render('Users\\user_filt...', Array, true)
+#4 C:\xampp\htdocs\rico_store_management_app\app\Controllers\Users.php(104): view('Users\\user_filt...', Array)
+#5 C:\xampp\htdocs\rico_store_management_app\system\CodeIgniter.php(931): App\Controllers\Users->display_specific_user()
+#6 C:\xampp\htdocs\rico_store_management_app\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#7 C:\xampp\htdocs\rico_store_management_app\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\rico_store_management_app\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\rico_store_management_app\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2021-06-23 17:39:54 --> Call to undefined method App\Models\Device::get_user_by_national_id_or_email
+#0 C:\xampp\htdocs\rico_store_management_app\app\Controllers\Device.php(229): CodeIgniter\Model->__call('get_user_by_nat...', Array)
+#1 C:\xampp\htdocs\rico_store_management_app\system\CodeIgniter.php(931): App\Controllers\Device->check_if_device_has_been_returned()
+#2 C:\xampp\htdocs\rico_store_management_app\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Device))
+#3 C:\xampp\htdocs\rico_store_management_app\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\rico_store_management_app\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\rico_store_management_app\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2021-06-23 17:40:00 --> Call to undefined method App\Models\Device::get_user_by_national_id_or_email
+#0 C:\xampp\htdocs\rico_store_management_app\app\Controllers\Device.php(229): CodeIgniter\Model->__call('get_user_by_nat...', Array)
+#1 C:\xampp\htdocs\rico_store_management_app\system\CodeIgniter.php(931): App\Controllers\Device->check_if_device_has_been_returned()
+#2 C:\xampp\htdocs\rico_store_management_app\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Device))
+#3 C:\xampp\htdocs\rico_store_management_app\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\rico_store_management_app\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\rico_store_management_app\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2021-06-23 17:41:17 --> Undefined index: device_id
+#0 C:\xampp\htdocs\rico_store_management_app\app\Controllers\Device.php(230): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\xampp\\htdocs...', 230, Array)
+#1 C:\xampp\htdocs\rico_store_management_app\system\CodeIgniter.php(931): App\Controllers\Device->check_if_device_has_been_returned()
+#2 C:\xampp\htdocs\rico_store_management_app\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Device))
+#3 C:\xampp\htdocs\rico_store_management_app\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\rico_store_management_app\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\rico_store_management_app\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2021-06-23 17:42:54 --> Trying to get property 'device_id' of non-object
+#0 C:\xampp\htdocs\rico_store_management_app\app\Controllers\Device.php(230): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', 'C:\\xampp\\htdocs...', 230, Array)
+#1 C:\xampp\htdocs\rico_store_management_app\system\CodeIgniter.php(931): App\Controllers\Device->check_if_device_has_been_returned()
+#2 C:\xampp\htdocs\rico_store_management_app\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Device))
+#3 C:\xampp\htdocs\rico_store_management_app\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\rico_store_management_app\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\rico_store_management_app\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2021-06-23 17:46:40 --> Undefined variable: device_list
+#0 C:\xampp\htdocs\rico_store_management_app\app\Views\Device\filtered_device.php(24): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 24, Array)
+#1 C:\xampp\htdocs\rico_store_management_app\system\View\View.php(230): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\rico_store_management_app\system\View\View.php(232): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\rico_store_management_app\system\Common.php(1250): CodeIgniter\View\View->render('Device\\filtered...', Array, true)
+#4 C:\xampp\htdocs\rico_store_management_app\app\Controllers\Device.php(233): view('Device\\filtered...', Array)
+#5 C:\xampp\htdocs\rico_store_management_app\system\CodeIgniter.php(931): App\Controllers\Device->check_if_device_has_been_returned()
+#6 C:\xampp\htdocs\rico_store_management_app\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Device))
+#7 C:\xampp\htdocs\rico_store_management_app\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\rico_store_management_app\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\rico_store_management_app\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2021-06-23 17:51:28 --> Undefined property: stdClass::$user_account_name
+#0 C:\xampp\htdocs\rico_store_management_app\app\Views\Device\filtered_device.php(28): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 28, Array)
+#1 C:\xampp\htdocs\rico_store_management_app\system\View\View.php(230): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\rico_store_management_app\system\View\View.php(232): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\rico_store_management_app\system\Common.php(1250): CodeIgniter\View\View->render('Device\\filtered...', Array, true)
+#4 C:\xampp\htdocs\rico_store_management_app\app\Controllers\Device.php(233): view('Device\\filtered...', Array)
+#5 C:\xampp\htdocs\rico_store_management_app\system\CodeIgniter.php(931): App\Controllers\Device->check_if_device_has_been_returned()
+#6 C:\xampp\htdocs\rico_store_management_app\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Device))
+#7 C:\xampp\htdocs\rico_store_management_app\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\rico_store_management_app\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\rico_store_management_app\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2021-06-23 17:52:28 --> Undefined property: stdClass::$user_account_name
+#0 C:\xampp\htdocs\rico_store_management_app\app\Views\Device\filtered_device.php(28): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 28, Array)
+#1 C:\xampp\htdocs\rico_store_management_app\system\View\View.php(230): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\rico_store_management_app\system\View\View.php(232): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\rico_store_management_app\system\Common.php(1250): CodeIgniter\View\View->render('Device\\filtered...', Array, true)
+#4 C:\xampp\htdocs\rico_store_management_app\app\Controllers\Device.php(233): view('Device\\filtered...', Array)
+#5 C:\xampp\htdocs\rico_store_management_app\system\CodeIgniter.php(931): App\Controllers\Device->check_if_device_has_been_returned()
+#6 C:\xampp\htdocs\rico_store_management_app\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Device))
+#7 C:\xampp\htdocs\rico_store_management_app\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\rico_store_management_app\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\rico_store_management_app\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2021-06-23 17:53:04 --> Undefined variable: device_data
+#0 C:\xampp\htdocs\rico_store_management_app\app\Views\Device\filtered_device.php(32): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 32, Array)
+#1 C:\xampp\htdocs\rico_store_management_app\system\View\View.php(230): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\rico_store_management_app\system\View\View.php(232): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\rico_store_management_app\system\Common.php(1250): CodeIgniter\View\View->render('Device\\filtered...', Array, true)
+#4 C:\xampp\htdocs\rico_store_management_app\app\Controllers\Device.php(233): view('Device\\filtered...', Array)
+#5 C:\xampp\htdocs\rico_store_management_app\system\CodeIgniter.php(931): App\Controllers\Device->check_if_device_has_been_returned()
+#6 C:\xampp\htdocs\rico_store_management_app\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Device))
+#7 C:\xampp\htdocs\rico_store_management_app\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\rico_store_management_app\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\rico_store_management_app\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2021-06-23 17:54:57 --> Trying to get property 'user_account_id' of non-object
+#0 C:\xampp\htdocs\rico_store_management_app\app\Controllers\Users.php(83): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', 'C:\\xampp\\htdocs...', 83, Array)
+#1 C:\xampp\htdocs\rico_store_management_app\system\CodeIgniter.php(931): App\Controllers\Users->check_if_user_exists()
+#2 C:\xampp\htdocs\rico_store_management_app\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#3 C:\xampp\htdocs\rico_store_management_app\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\rico_store_management_app\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\rico_store_management_app\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2021-06-23 18:01:17 --> Undefined property: stdClass::$devic_state_id
+#0 C:\xampp\htdocs\rico_store_management_app\app\Views\Device\all_devices.php(46): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 46, Array)
+#1 C:\xampp\htdocs\rico_store_management_app\system\View\View.php(230): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\rico_store_management_app\system\View\View.php(232): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\rico_store_management_app\system\Common.php(1250): CodeIgniter\View\View->render('Device\\all_devi...', Array, true)
+#4 C:\xampp\htdocs\rico_store_management_app\app\Controllers\Device.php(55): view('Device\\all_devi...', Array)
+#5 C:\xampp\htdocs\rico_store_management_app\system\CodeIgniter.php(931): App\Controllers\Device->load_devices_list()
+#6 C:\xampp\htdocs\rico_store_management_app\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Device))
+#7 C:\xampp\htdocs\rico_store_management_app\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\rico_store_management_app\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\rico_store_management_app\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#10 {main}
